@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+JEST_CONFIG_FILE="jest.config.mjs"
+
+if [ -f $FILE ]; then
+  echo "$JEST_CONFIG_FILE exists"
+else
+  npm i -D jest@27 #nodemon@2.0
+  npx jest --init
+fi
+
+# npm install --silent

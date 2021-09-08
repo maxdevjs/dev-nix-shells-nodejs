@@ -8,14 +8,13 @@ A [nix-shell](https://nixos.org/manual/nix/stable/#description-13) template to s
 
 Built gathering inspiration from several [sources](#resources), it makes available:
 
-- [Node.js](https://nodejs.dev/) itself
+- `unstable.`[nodejs-16_x](https://nodejs.dev/)
   - from [nixos.org/packages](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=nodejs)
     - in version `16_x` (currently `16.8`)
-- [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server#readme) ([LSP](https://microsoft.github.io/language-server-protocol/))
+- `unstable.`[nodePackages.typescript-language-server](https://github.com/typescript-language-server/typescript-language-server#readme) ([LSP](https://microsoft.github.io/language-server-protocol/))
   - from [nixos.org/packages](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=tsserver)
-- both tools are the installed from the `unstable` channel (latest packages available)
-- [Jest](https://jestjs.io/) basic initialization (`setup` file)
-  - also, some `npm` sugarness can be added
+- [Jest](https://jestjs.io/) basic initialization via `setup` script
+  - some `npm` sugarness can be added
 
 ## Resources
 
